@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #f5f7ee;
+  --color-fg: #1f2923;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 0%, #d7f3d9 0%, transparent 25%),
+    radial-gradient(circle at 85% 100%, #fdeac2 0%, transparent 30%),
+    var(--color-bg);
+  color: var(--color-fg);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
