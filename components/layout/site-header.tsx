@@ -14,8 +14,13 @@ export function SiteHeader() {
       <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-4 sm:px-8">
         <Link href="/" className="inline-flex items-center gap-2">
           <span className="h-3 w-3 rounded-full bg-emerald-600" />
-          <span className="text-lg font-bold tracking-tight text-slate-900">
-            Toolloom
+          <span className="flex flex-wrap items-baseline gap-2">
+            <span className="text-lg font-bold tracking-tight text-slate-900">
+              Team Sahil
+            </span>
+            <span className="text-xs font-medium text-slate-600">
+              Tanu khan made it
+            </span>
           </span>
         </Link>
 

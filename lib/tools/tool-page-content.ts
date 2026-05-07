@@ -18,7 +18,7 @@ function getCategoryExample(tool: ToolDefinition): {
 } {
   if (tool.slug === "word-counter") {
     return {
-      input: "Toolloom makes beginner coding easier.",
+      input: "Team Sahil makes beginner coding easier.",
       output:
         "Words: 5\nCharacters (with spaces): 36\nCharacters (without spaces): 31\nLines: 1",
     };
@@ -34,29 +34,29 @@ function getCategoryExample(tool: ToolDefinition): {
 
   if (tool.slug === "case-converter") {
     return {
-      input: "welcome to toolloom",
-      output: "WELCOME TO TOOLLOOM",
+      input: "welcome to team sahil",
+      output: "WELCOME TO TEAM SAHIL",
     };
   }
 
   if (tool.slug === "remove-extra-spaces") {
     return {
-      input: "Hello    Toolloom    user",
-      output: "Hello Toolloom user",
+      input: "Hello    Team Sahil    user",
+      output: "Hello Team Sahil user",
     };
   }
 
   if (tool.slug === "json-formatter") {
     return {
-      input: '{"name":"Toolloom","year":2026,"tags":["tools","web"]}',
+      input: '{"name":"Team Sahil","year":2026,"tags":["tools","web"]}',
       output:
-        '{\n  "name": "Toolloom",\n  "year": 2026,\n  "tags": [\n    "tools",\n    "web"\n  ]\n}',
+        '{\n  "name": "Team Sahil",\n  "year": 2026,\n  "tags": [\n    "tools",\n    "web"\n  ]\n}',
     };
   }
 
   if (tool.slug === "json-validator") {
     return {
-      input: '{"name":"Toolloom","active":true}',
+      input: '{"name":"Team Sahil","active":true}',
       output: "Valid JSON.\nType: object\nTop-level keys: 2",
     };
   }
@@ -207,7 +207,7 @@ function getCategoryExample(tool: ToolDefinition): {
   switch (tool.categorySlug) {
     case "text-tools":
       return {
-        input: "Hello   Toolloom   user",
+        input: "Hello   Team Sahil   user",
         output: "Clean and transformed text result appears here.",
       };
     case "developer-tools":
@@ -263,7 +263,7 @@ export function getToolPageContent(tool: ToolDefinition): ToolPageContent {
     {
       question: `Is ${tool.name} free to use?`,
       answer:
-        "Yes. This tool is free in Toolloom Version 1 and does not require login.",
+        "Yes. This tool is free in Team Sahil Version 1 and does not require login.",
     },
     {
       question: "Is my input data private?",

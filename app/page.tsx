@@ -25,7 +25,7 @@ export default function HomePage() {
           One clean place for quick online tools you can trust.
         </h1>
         <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 sm:text-lg">
-          Toolloom helps with text, developer, image, PDF, SEO, and calculator
+          Team Sahil helps with text, developer, image, PDF, SEO, and calculator
           tasks. Version 1 focuses on simple tools that run in your browser.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
@@ -90,7 +90,7 @@ export default function HomePage() {
       <section className="rounded-2xl border border-slate-200 bg-white/95 p-6 shadow-sm">
         <SectionTitle
           title="Helpful links"
-          description="Use these pages to understand Toolloom better and navigate faster."
+          description="Use these pages to understand Team Sahil better and navigate faster."
         />
         <div className="mt-4 flex flex-wrap gap-3">
           <Link

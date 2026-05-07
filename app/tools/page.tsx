@@ -14,7 +14,7 @@ import type { ToolCategorySlug, ToolDefinition } from "@/types/tool";
 export const metadata: Metadata = {
   title: "All Tools",
   description:
-    "Browse all free Toolloom tools by category and search quickly for the task you need.",
+    "Browse all free Team Sahil tools by category and search quickly for the task you need.",
 };
 
 function filterTools(

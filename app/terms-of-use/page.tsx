@@ -5,7 +5,7 @@ import { SectionTitle } from "@/components/common/section-title";
 export const metadata: Metadata = {
   title: "Terms of Use",
   description:
-    "Read the basic terms for using Toolloom and its free online tools.",
+    "Read the basic terms for using Team Sahil and its free online tools.",
 };
 
 export default function TermsOfUsePage() {
@@ -14,7 +14,7 @@ export default function TermsOfUsePage() {
       <section className="rounded-2xl border border-slate-200 bg-white/95 p-6 shadow-sm">
         <SectionTitle
           badgeText="Terms of Use"
-          title="Simple rules for using Toolloom"
+          title="Simple rules for using Team Sahil"
           description="By using this website, you agree to these basic terms."
         />
         <p className="mt-4 text-xs text-slate-500">Last updated: May 6, 2026</p>
@@ -25,7 +25,7 @@ export default function TermsOfUsePage() {
           1. Fair use
         </h2>
         <p className="mt-3 text-sm leading-7 text-slate-700">
-          You can use Toolloom tools for personal and professional tasks. Do
+          You can use Team Sahil tools for personal and professional tasks. Do
           not use the site for harmful, illegal, or abusive activity.
         </p>
       </section>
@@ -56,7 +56,7 @@ export default function TermsOfUsePage() {
           4. Acceptance
         </h2>
         <p className="mt-3 text-sm leading-7 text-slate-700">
-          Continued use of Toolloom means you accept the latest version of these
+          Continued use of Team Sahil means you accept the latest version of these
           terms.
         </p>
       </section>

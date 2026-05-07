@@ -59,7 +59,7 @@ function getInputPlaceholder(slug: DeveloperToolSlug): string {
   switch (slug) {
     case "json-formatter":
     case "json-validator":
-      return '{"name":"Toolloom","type":"project"}';
+      return '{"name":"Team Sahil","type":"project"}';
     case "base64-encode-decode":
       return "Enter plain text or Base64 text here...";
     case "url-encode-decode":

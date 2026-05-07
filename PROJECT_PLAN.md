@@ -1,7 +1,7 @@
 # PROJECT PLAN
 
 ## 1. Project Goal
-Build an original, free multi-tool website called **Toolloom**.
+Build an original, free multi-tool website called **Team Sahil**.
 The website should help users do quick tasks in the browser.
 
 ## 2. Version 1 Scope Rules
@@ -97,4 +97,3 @@ Do not make this claim for tools that need server processing.
 - Responsive on mobile and desktop
 - Basic SEO metadata added
 - No backend dependencies
-

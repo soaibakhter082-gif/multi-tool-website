@@ -5,7 +5,7 @@ import { SectionTitle } from "@/components/common/section-title";
 export const metadata: Metadata = {
   title: "Disclaimer",
   description:
-    "Important notice about using Toolloom outputs and limitations.",
+    "Important notice about using Team Sahil outputs and limitations.",
 };
 
 export default function DisclaimerPage() {
@@ -15,7 +15,7 @@ export default function DisclaimerPage() {
         <SectionTitle
           badgeText="Disclaimer"
           title="Please review before using results"
-          description="Toolloom provides helpful utilities, but final responsibility stays with the user."
+          description="Team Sahil provides helpful utilities, but final responsibility stays with the user."
         />
       </section>
 
@@ -24,7 +24,7 @@ export default function DisclaimerPage() {
           General information
         </h2>
         <p className="mt-3 text-sm leading-7 text-slate-700">
-          Outputs from Toolloom are provided for general utility purposes only.
+          Outputs from Team Sahil are provided for general utility purposes only.
           They are not legal, medical, financial, or professional advice.
         </p>
       </section>
@@ -44,7 +44,7 @@ export default function DisclaimerPage() {
           No liability
         </h2>
         <p className="mt-3 text-sm leading-7 text-slate-700">
-          Toolloom is not liable for direct or indirect loss resulting from the
+          Team Sahil is not liable for direct or indirect loss resulting from the
           use of this website or tool outputs.
         </p>
       </section>

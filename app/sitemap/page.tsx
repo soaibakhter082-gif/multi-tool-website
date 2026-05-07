@@ -6,7 +6,7 @@ import { getAllCategories, getAllTools, getToolsByCategory } from "@/lib/tools/r
 export const metadata: Metadata = {
   title: "Sitemap",
   description:
-    "Browse all key pages, categories, and tool links in Toolloom.",
+    "Browse all key pages, categories, and tool links in Team Sahil.",
 };
 
 const CORE_PAGES = [

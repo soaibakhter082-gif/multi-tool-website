@@ -5,7 +5,7 @@ import { SectionTitle } from "@/components/common/section-title";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Toolloom for feedback, tool suggestions, or bug reports.",
+    "Contact Team Sahil for feedback, tool suggestions, or bug reports.",
 };
 
 export default function ContactPage() {
@@ -24,7 +24,7 @@ export default function ContactPage() {
           Contact options
         </h2>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-slate-700">
-          <li>Email: support@toolloom.dev</li>
+          <li>Email: support@teamsahil.dev</li>
           <li>Subject examples: Bug report, New tool request, Feedback</li>
           <li>Response time: usually within 2 to 5 business days</li>
         </ul>

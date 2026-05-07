@@ -5,11 +5,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Toolloom",
-    template: "%s | Toolloom",
+    default: "Team Sahil",
+    template: "%s | Team Sahil",
   },
   description:
-    "Toolloom is an original, free multi-tool website where everyday tasks are done directly in your browser.",
+    "Team Sahil is an original, free multi-tool website where everyday tasks are done directly in your browser.",
   robots: {
     index: true,
     follow: true,

@@ -1,6 +1,6 @@
-# Toolloom - Free Multi-Tool Website (Version 1)
+# Team Sahil - Free Multi-Tool Website (Version 1)
 
-Toolloom is an original multi-tool website built with:
+Team Sahil is an original multi-tool website built with:
 
 - Next.js
 - TypeScript
