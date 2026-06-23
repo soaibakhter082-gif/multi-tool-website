@@ -4,7 +4,7 @@ import { ThemeToggleShell } from "@/components/layout/theme-toggle-shell";
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "All Tools", href: "/tools" },
-  { label: "Guides", href: "/blog" },
+  { label: "Guides", href: "/blog", mobileHidden: true },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -26,12 +26,15 @@ export function SiteHeader() {
         </div>
 
         <nav aria-label="Main navigation" className="w-full sm:w-auto">
-          <ul className="flex flex-wrap items-center gap-2 sm:justify-end sm:gap-3">
+          <ul className="grid grid-cols-4 gap-2 sm:flex sm:flex-wrap sm:justify-end sm:gap-3">
             {NAV_ITEMS.map((item) => (
-              <li key={item.href}>
+              <li
+                key={item.href}
+                className={item.mobileHidden ? "hidden sm:block" : "min-w-0"}
+              >
                 <Link
                   href={item.href}
-                  className="rounded-full px-2.5 py-1.5 text-xs font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-900 dark:text-slate-200 dark:hover:bg-slate-800 dark:hover:text-white sm:px-3 sm:text-sm"
+                  className="inline-flex w-full items-center justify-center rounded-full px-2.5 py-1.5 text-xs font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-900 dark:text-slate-200 dark:hover:bg-slate-800 dark:hover:text-white sm:w-auto sm:px-3 sm:text-sm"
                 >
                   {item.label}
                 </Link>
