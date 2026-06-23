@@ -24,15 +24,83 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="min-h-screen overflow-x-hidden">
+      <body className="min-h-screen overflow-x-hidden" suppressHydrationWarning>
+        <Script id="pre-hydration-dom-sanitize" strategy="beforeInteractive">
+          {`
+            (function () {
+              function shouldStripAttribute(name) {
+                return (
+                  name === "bis_skin_checked" ||
+                  name === "bis_register" ||
+                  name.indexOf("__processed_") === 0
+                );
+              }
+
+              function stripAttributes(root) {
+                if (!root || root.nodeType !== 1 || !root.getAttributeNames) {
+                  return;
+                }
+
+                var nodes = [root];
+                if (root.querySelectorAll) {
+                  nodes = nodes.concat(Array.prototype.slice.call(root.querySelectorAll("*")));
+                }
+
+                nodes.forEach(function (node) {
+                  node.getAttributeNames().forEach(function (name) {
+                    if (shouldStripAttribute(name)) {
+                      node.removeAttribute(name);
+                    }
+                  });
+                });
+              }
+
+              stripAttributes(document.documentElement);
+
+              var observer = new MutationObserver(function (mutations) {
+                mutations.forEach(function (mutation) {
+                  if (
+                    mutation.type === "attributes" &&
+                    mutation.target &&
+                    shouldStripAttribute(mutation.attributeName || "")
+                  ) {
+                    mutation.target.removeAttribute(mutation.attributeName);
+                  }
+
+                  mutation.addedNodes.forEach(function (node) {
+                    if (node.nodeType === 1) {
+                      stripAttributes(node);
+                    }
+                  });
+                });
+              });
+
+              observer.observe(document.documentElement, {
+                subtree: true,
+                childList: true,
+                attributes: true,
+              });
+
+              window.addEventListener(
+                "load",
+                function () {
+                  stripAttributes(document.documentElement);
+                  window.setTimeout(function () {
+                    observer.disconnect();
+                  }, 0);
+                },
+                { once: true }
+              );
+            })();
+          `}
+        </Script>
         <Script id="theme-init" strategy="beforeInteractive">
           {`
             (function () {
               try {
                 var key = "toolspark-theme";
                 var saved = window.localStorage.getItem(key);
-                var systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-                var theme = saved === "dark" || saved === "light" ? saved : (systemDark ? "dark" : "light");
+                var theme = saved === "dark" || saved === "light" ? saved : "light";
                 document.documentElement.classList.toggle("dark", theme === "dark");
                 document.documentElement.style.colorScheme = theme;
               } catch (error) {}
