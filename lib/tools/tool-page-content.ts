@@ -18,7 +18,7 @@ function getCategoryExample(tool: ToolDefinition): {
 } {
   if (tool.slug === "word-counter") {
     return {
-      input: "Team Sahil makes beginner coding easier.",
+      input: "ToolSpark makes beginner coding easier.",
       output:
         "Words: 5\nCharacters (with spaces): 36\nCharacters (without spaces): 31\nLines: 1",
     };
@@ -34,29 +34,29 @@ function getCategoryExample(tool: ToolDefinition): {
 
   if (tool.slug === "case-converter") {
     return {
-      input: "welcome to team sahil",
-      output: "WELCOME TO TEAM SAHIL",
+      input: "welcome to toolspark",
+      output: "WELCOME TO TOOLSPARK",
     };
   }
 
   if (tool.slug === "remove-extra-spaces") {
     return {
-      input: "Hello    Team Sahil    user",
-      output: "Hello Team Sahil user",
+      input: "Hello    ToolSpark    user",
+      output: "Hello ToolSpark user",
     };
   }
 
   if (tool.slug === "json-formatter") {
     return {
-      input: '{"name":"Team Sahil","year":2026,"tags":["tools","web"]}',
+      input: '{"name":"ToolSpark","year":2026,"tags":["tools","web"]}',
       output:
-        '{\n  "name": "Team Sahil",\n  "year": 2026,\n  "tags": [\n    "tools",\n    "web"\n  ]\n}',
+        '{\n  "name": "ToolSpark",\n  "year": 2026,\n  "tags": [\n    "tools",\n    "web"\n  ]\n}',
     };
   }
 
   if (tool.slug === "json-validator") {
     return {
-      input: '{"name":"Team Sahil","active":true}',
+      input: '{"name":"ToolSpark","active":true}',
       output: "Valid JSON.\nType: object\nTop-level keys: 2",
     };
   }
@@ -207,7 +207,7 @@ function getCategoryExample(tool: ToolDefinition): {
   switch (tool.categorySlug) {
     case "text-tools":
       return {
-        input: "Hello   Team Sahil   user",
+        input: "Hello   ToolSpark   user",
         output: "Clean and transformed text result appears here.",
       };
     case "developer-tools":
@@ -263,7 +263,7 @@ export function getToolPageContent(tool: ToolDefinition): ToolPageContent {
     {
       question: `Is ${tool.name} free to use?`,
       answer:
-        "Yes. This tool is free in Team Sahil Version 1 and does not require login.",
+        "Yes. This tool is free in ToolSpark Version 1 and does not require login.",
     },
     {
       question: "Is my input data private?",

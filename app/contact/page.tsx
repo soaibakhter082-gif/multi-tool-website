@@ -5,7 +5,7 @@ import { SectionTitle } from "@/components/common/section-title";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Team Sahil for feedback, tool suggestions, or bug reports.",
+    "Contact ToolSpark for feedback, tool suggestions, or bug reports.",
 };
 
 export default function ContactPage() {

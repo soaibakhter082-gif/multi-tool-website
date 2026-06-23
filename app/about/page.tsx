@@ -5,7 +5,7 @@ import { SectionTitle } from "@/components/common/section-title";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn why Team Sahil was built and how this free browser-first tool website helps beginners and everyday users.",
+    "Learn why ToolSpark was built and how this free browser-first tool website helps beginners and everyday users.",
 };
 
 export default function AboutPage() {
@@ -13,9 +13,9 @@ export default function AboutPage() {
     <main className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-10 sm:px-8">
       <section className="rounded-2xl border border-slate-200 bg-white/95 p-6 shadow-sm">
         <SectionTitle
-          badgeText="About Team Sahil"
+          badgeText="About ToolSpark"
           title="Simple tools for real daily tasks"
-          description="Team Sahil is built to give people a clean and easy place to solve quick digital tasks for free."
+          description="ToolSpark is built to give people a clean and easy place to solve quick digital tasks for free."
         />
       </section>
 
@@ -25,7 +25,7 @@ export default function AboutPage() {
         </h2>
         <p className="mt-3 text-sm leading-7 text-slate-700">
           Many websites are full of noise, popups, and confusing menus.
-          Team Sahil focuses on clarity. You open a tool, add your input, get your
+          ToolSpark focuses on clarity. You open a tool, add your input, get your
           result, and move on quickly.
         </p>
       </section>
@@ -47,7 +47,7 @@ export default function AboutPage() {
           Original design promise
         </h2>
         <p className="mt-3 text-sm leading-7 text-slate-700">
-          Team Sahil is built as an original project. We avoid copying other
+          ToolSpark is built as an original project. We avoid copying other
           websites and focus on our own structure, naming, and content style.
         </p>
       </section>

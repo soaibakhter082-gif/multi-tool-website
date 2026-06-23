@@ -1,7 +1,7 @@
 # PROJECT PLAN
 
 ## 1. Project Goal
-Build an original, free multi-tool website called **Team Sahil**.
+Build an original, free multi-tool website called **ToolSpark**.
 The website should help users do quick tasks in the browser.
 
 ## 2. Version 1 Scope Rules

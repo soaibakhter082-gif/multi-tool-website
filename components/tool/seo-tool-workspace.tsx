@@ -163,7 +163,7 @@ export function SeoToolWorkspace({ slug, toolName }: SeoToolWorkspaceProps) {
 
     const link = document.createElement("a");
     link.href = qrDataUrl;
-    link.download = "team-sahil-qr-code.png";
+    link.download = "toolspark-qr-code.png";
     link.click();
   }
 

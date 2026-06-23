@@ -5,7 +5,7 @@ import { SectionTitle } from "@/components/common/section-title";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Read how Team Sahil handles your data and privacy for browser-based tools.",
+    "Read how ToolSpark handles your data and privacy for browser-based tools.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
         <SectionTitle
           badgeText="Privacy Policy"
           title="Your privacy matters"
-          description="This policy explains how data is handled on Team Sahil Version 1."
+          description="This policy explains how data is handled on ToolSpark Version 1."
         />
         <p className="mt-4 text-xs text-slate-500">Last updated: May 6, 2026</p>
       </section>
@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
           2. Accounts and payments
         </h2>
         <p className="mt-3 text-sm leading-7 text-slate-700">
-          Team Sahil Version 1 has no login system and no payment system. We do
+          ToolSpark Version 1 has no login system and no payment system. We do
           not ask for account creation.
         </p>
       </section>

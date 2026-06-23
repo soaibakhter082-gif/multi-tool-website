@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeToggleShell } from "@/components/layout/theme-toggle-shell";
 
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
@@ -10,17 +11,12 @@ const NAV_ITEMS = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-black/10 bg-white/85 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-black/10 bg-white/85 backdrop-blur dark:border-slate-700 dark:bg-slate-950/85">
       <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-4 sm:px-8">
         <Link href="/" className="inline-flex items-center gap-2">
           <span className="h-3 w-3 rounded-full bg-emerald-600" />
-          <span className="flex flex-wrap items-baseline gap-2">
-            <span className="text-lg font-bold tracking-tight text-slate-900">
-              Team Sahil
-            </span>
-            <span className="text-xs font-medium text-slate-600">
-              Tanu khan made it
-            </span>
+          <span className="text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">
+            ToolSpark
           </span>
         </Link>
 
@@ -30,12 +26,15 @@ export function SiteHeader() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="rounded-full px-2.5 py-1.5 text-xs font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-900 sm:px-3 sm:text-sm"
+                  className="rounded-full px-2.5 py-1.5 text-xs font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-900 dark:text-slate-200 dark:hover:bg-slate-800 dark:hover:text-white sm:px-3 sm:text-sm"
                 >
                   {item.label}
                 </Link>
               </li>
             ))}
+            <li>
+              <ThemeToggleShell />
+            </li>
           </ul>
         </nav>
       </div>

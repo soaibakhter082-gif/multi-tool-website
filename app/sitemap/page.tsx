@@ -6,7 +6,7 @@ import { getAllCategories, getAllTools, getToolsByCategory } from "@/lib/tools/r
 export const metadata: Metadata = {
   title: "Sitemap",
   description:
-    "Browse all key pages, categories, and tool links in Team Sahil.",
+    "Browse all key pages, categories, and tool links in ToolSpark.",
 };
 
 const CORE_PAGES = [

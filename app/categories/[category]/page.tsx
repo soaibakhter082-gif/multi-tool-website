@@ -32,7 +32,7 @@ export async function generateMetadata({
     title: `${categoryInfo?.name ?? "Category"} Tools`,
     description:
       categoryInfo?.description ??
-      "Explore tool categories in Team Sahil and pick the tools you need.",
+      "Explore tool categories in ToolSpark and pick the tools you need.",
   };
 }
 

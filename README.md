@@ -1,6 +1,6 @@
-# Team Sahil - Free Multi-Tool Website (Version 1)
+# ToolSpark - Free Multi-Tool Website (Version 1)
 
-Team Sahil is an original multi-tool website built with:
+ToolSpark is an original multi-tool website built with:
 
 - Next.js
 - TypeScript

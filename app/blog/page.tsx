@@ -5,7 +5,7 @@ import { SectionTitle } from "@/components/common/section-title";
 export const metadata: Metadata = {
   title: "Guides",
   description:
-    "Beginner-friendly guides are coming soon. Learn how to use Team Sahil tools in simple steps.",
+    "Beginner-friendly guides are coming soon. Learn how to use ToolSpark tools in simple steps.",
 };
 
 export default function BlogPage() {

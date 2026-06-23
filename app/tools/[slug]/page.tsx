@@ -44,7 +44,7 @@ export async function generateMetadata({
 
   return {
     title: tool.name,
-    description: `${tool.shortDescription} Use this free ${categoryName.toLowerCase()} tool in Team Sahil.`,
+    description: `${tool.shortDescription} Use this free ${categoryName.toLowerCase()} tool in ToolSpark.`,
   };
 }
 
