@@ -92,30 +92,30 @@ export default function HomePage() {
           title="Helpful links"
           description="Use these pages to understand ToolSpark better and navigate faster."
         />
-        <div className="mt-4 flex flex-wrap gap-3">
+        <div className="mt-4 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
           <Link
             href="/blog"
-            className="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-emerald-300 hover:text-emerald-800"
+            className="inline-flex items-center justify-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-emerald-300 hover:text-emerald-800 sm:justify-start"
           >
             Guides
           </Link>
           <Link
+            href="/sitemap"
+            className="order-2 inline-flex items-center justify-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-emerald-300 hover:text-emerald-800 sm:order-none sm:justify-start"
+          >
+            Sitemap
+          </Link>
+          <Link
             href="/about"
-            className="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-emerald-300 hover:text-emerald-800"
+            className="order-3 inline-flex items-center justify-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-emerald-300 hover:text-emerald-800 sm:order-none sm:justify-start"
           >
             About Us
           </Link>
           <Link
             href="/contact"
-            className="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-emerald-300 hover:text-emerald-800"
+            className="order-4 inline-flex items-center justify-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-emerald-300 hover:text-emerald-800 sm:order-none sm:justify-start"
           >
             Contact Us
-          </Link>
-          <Link
-            href="/sitemap"
-            className="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-emerald-300 hover:text-emerald-800"
-          >
-            Sitemap
           </Link>
         </div>
       </section>
