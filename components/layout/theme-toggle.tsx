@@ -47,24 +47,40 @@ export function ThemeToggle() {
     setMode(nextMode);
   }
 
-  const nextModeLabel = mode === "dark" ? "Light" : "Dark";
-  const currentModeLabel = mode === "dark" ? "Dark" : "Light";
+  const isDarkMode = mode === "dark";
+  const nextModeLabel = isDarkMode ? "Light" : "Dark";
+  const currentModeLabel = isDarkMode ? "Dark" : "Light";
 
   return (
     <button
       type="button"
       onClick={handleToggle}
-      aria-pressed={mode === "dark"}
+      role="switch"
+      aria-checked={isDarkMode}
       aria-label={`Switch to ${nextModeLabel.toLowerCase()} mode`}
       title={`Switch to ${nextModeLabel} mode`}
-      className="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 transition hover:border-emerald-300 hover:text-emerald-800 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-emerald-400 dark:hover:text-emerald-300 sm:px-3 sm:text-sm"
+      className="group inline-flex h-9 items-center gap-3 rounded-full border border-slate-300 bg-white/95 px-2 py-1 text-xs font-semibold text-slate-700 shadow-sm transition hover:border-emerald-300 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:border-slate-600 dark:bg-slate-900/95 dark:text-slate-200 dark:hover:border-emerald-400 dark:hover:text-emerald-300 dark:focus-visible:ring-offset-slate-950 sm:h-10 sm:px-2.5 sm:text-sm"
     >
-      <span>Theme</span>
+      <span className="min-w-[2.8rem] text-left tracking-[0.04em]">
+        {currentModeLabel}
+      </span>
       <span
         aria-hidden="true"
-        className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-slate-700 dark:bg-slate-800 dark:text-slate-200"
+        className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full border transition duration-300 ease-out sm:w-12 ${
+          isDarkMode
+            ? "border-emerald-400/70 bg-slate-800 shadow-[inset_0_0_0_1px_rgba(16,185,129,0.16)]"
+            : "border-amber-200 bg-gradient-to-r from-amber-100 via-white to-emerald-100"
+        }`}
       >
-        {currentModeLabel}
+        <span
+          className={`absolute left-0.5 flex h-5 w-5 items-center justify-center rounded-full shadow-sm transition duration-300 ease-out ${
+            isDarkMode
+              ? "translate-x-[1.25rem] bg-slate-950 text-emerald-300 sm:translate-x-[1.5rem]"
+              : "translate-x-0 bg-white text-amber-500"
+          }`}
+        >
+          <span className="text-[11px] leading-none">{isDarkMode ? "D" : "L"}</span>
+        </span>
       </span>
     </button>
   );
